@@ -1,0 +1,196 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=PT+Serif:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+
+/* theme experiment */
+.logo {
+    height: 60px;
+    width: 60px;
+    border: 2px solid black;
+}
+body{
+    color:whitesmoke;
+}
+ @keyframes appear {
+     from {
+         opacity: 0;
+         clip-path: inset(100% 100% 0 0);
+     }
+
+     to {
+         opacity: 1;
+         clip-path: inset(0 0 0 0);
+     }
+ }
+
+ .block {
+     animation: appear linear;
+     animation-timeline: view();
+     animation-range: entry 0% cover 20%;
+ }
+
+nav {
+    font-weight: 500;
+    letter-spacing: 0.2px;
+    box-shadow: 0 0 150px 20px blue;
+}
+
+.hero-box {
+    height: 90vh;
+}
+
+.hero-left {
+    margin: auto;
+    width: 50%;
+}
+
+.hero-description {
+    letter-spacing: 1px;
+    word-spacing: 1.2px;
+    text-align: justify;
+    width: 90%;
+    font-size: 0.8rem;
+}
+
+.box-shadow {
+
+    box-shadow: 0 0 200px 40px rgb(13, 0, 255);
+}
+
+.carousel {
+    height: inherit;
+}
+.hero-title {
+    font-family: "PT Sarif";
+}
+
+.portfolio-title {
+    text-align: center;
+    text-transform: uppercase;
+    text-shadow: 10px 0px 10px rgb(13, 0, 255);
+    font-size: 2rem;
+    font-weight: bolder;
+    padding: 20px;
+    width: 100%;
+}
+
+.skill-title {
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 2rem;
+    font-weight: bolder;
+    padding: 20px;
+    width: 100%;
+}
+.contact-title {
+    text-align: center;
+    text-transform: uppercase;
+    text-shadow: 10px 0px 10px rgb(13, 0, 255);
+    font-size: 2rem;
+    font-weight: bolder;
+    padding: 20px;
+    width: 100%;
+}
+
+#portfolio{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    flex-direction: column;
+    box-shadow: 10px 0 200px 10px rgb(38, 0, 255);
+}
+
+#contact-section{
+    box-shadow: 10px 0 200px 10px rgb(38, 0, 255);
+}
+
+
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    .hero-box {
+        height: auto;
+    }
+
+    .hero-left {
+        text-align: justify;
+        width: 100%;
+        padding: 0 18%;
+        margin-bottom: 20px;
+    }
+
+    .hero-title {
+        font-size: 1.4rem;
+    }
+
+    .hero-heading {
+        font-size: 1rem;
+    }
+
+    .hero-description {
+        font-size: 0.8rem;
+    }
+
+    .hero-right {
+        padding: 10px;
+    }
+
+    footer{
+        padding: 20px;
+        
+    }
+
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    .hero-left {
+        padding: 16px;
+        margin: auto;
+    }
+
+    .hero-title {
+        font-size: 2rem;
+    }
+
+    .hero-heading {
+        font-size: 1rem;
+    }
+
+    .hero-description {
+        padding: 10px 0px;
+        letter-spacing: 1px;
+        word-spacing: 1.2px;
+        text-align: justify;
+        width: 90%;
+        font-size: 0.8rem;
+    }
+
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    .hero-left {
+        padding: 50px;
+        margin: auto;
+    }
+
+    .hero-title {
+        font-size: 2.5rem;
+        font-family: "PT Sarif";
+    }
+
+    .hero-heading {
+        font-size: 1.2rem;
+    }
+
+    .hero-description {
+        font-size: 1rem;
+    }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {}

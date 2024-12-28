@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="dark">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap Responsive Website</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <!-- Navbar -->
+
+
+    <nav class="navbar navbar-expand-lg text-warning"  >
+        <div class="container px-lg-5 py-lg-1 ">
+            <!-- Logo -->
+            <a class="navbar-brand" href="#">
+                <img src="./images/logo.jpg" alt="Logo" class="shadow-lg d-inline-block align-text-top logo rounded-5">
+            </a>
+            <!-- Toggle button for small screens -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <!-- Navbar links -->
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto d-flex align-items-center gap-sm-1 text-uppercase justify-content-center fs-5">
+                    <li class="nav-item">
+                        <a class="nav-link active " href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#portfolio">Portfolio</a>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="nav-link " href="#skills">Skill</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact-section">Contact</a>
+                    </li>
+                    <li class="nav-item ">
+                        <a class="btn btn-primary ms-3 " target="_blank"
+                            href="https://drive.google.com/file/d/1qGBgz8sC70LBq_LDyYkMsaYNpZYCpbII/view?usp=sharing"
+                            role="button">Resume
+                            <span class="m-1"></span>
+                            <i class="fas fa-cloud-download"></i>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+    <!-- Hero Section -->
+    <header id="home" class="container block">
+        <div class="hero-box row d-flex justify-content-center align-items-center ">
+            <div class="col-md-6 hero-left order-last">
+                <h1 class="hero-title  text-uppercase  ">Hi, I am md.omar</h1>
+                <h4 class="hero-heading text-uppercase "> web developer || Programmer</h4>
+
+                <p class="hero-description ">Passionate MERN Developer and Python
+                    Programmer, crafting scalable web apps, APIs, and machine learning solutions with
+                    clean, efficient code.</p>
+                <div class="d-flex align-items-center gap-4">
+                    <!-- Facebook -->
+                    <a href="https://www.facebook.com/alomarsadek/" target="_blank"
+                        class="text-decoration-none text-primary fs-2">
+                        <i class="fab fa-facebook"></i>
+                    </a>
+                    <!-- GitHub -->
+                    <a href="https://github.com/ERROR-41" target="_blank"
+                        class="text-decoration-none text-secondary fs-2">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <!-- YouTube -->
+                    <a href="https://www.youtube.com/@mdalomarsadek" target="_blank"
+                        class="text-decoration-none text-danger fs-2">
+                        <i class="fab fa-youtube"></i>
+                    </a>
+                    <a class="btn btn-primary " target="_blank"
+                        href="https://drive.google.com/file/d/1qGBgz8sC70LBq_LDyYkMsaYNpZYCpbII/view?usp=sharing"
+                        role="button"> RESUME
+
+                        <i class="fas fa-cloud-download"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-6  hero-right">
+                <img class="img-fluid " src="./images/my_profile.png" alt="" height="">
+            </div>
+        </div>
+    </header>
+
+
+
+    <!-- portfolio section start -->
+    <div class="container min-vh-100 block" id="portfolio">
+        <h1 class="portfolio-title ">My Portfolio</h1>
+        <div class="row d-flex border align-items-center justify-content-center text-center mb-3 ">
+            <div class="col-md-6 border  ">
+                <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active" data-bs-interval="10000">
+                            <img src="./images/image2.png" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item" data-bs-interval="1000">
+                            <img src="./images/image2.png" class="d-block w-100" alt="...">
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+            <div class="col-md-6 vh-25 d-flex flex-column text-center align align-items-center h-100">
+                <h1 class="h1 ">Frist Demo Project</h1>
+                <p class="p p-3 text-start">My demo project showcases my journey into web development, focusing on
+                    building responsive
+                    and visually appealing web
+                    pages. This project integrates HTML, CSS, and basic JavaScript to demonstrate my foundational
+                    knowledge and
+                    problem-solving skills in creating dynamic user interfaces.</p>
+            </div>
+        </div>
+        <!-- anouther carousal start here -->
+        <div class="row d-flex align-items-center border justify-content-center text-center mb-3 ">
+            <div class="col-md-6 border  ">
+                <div id="carouselExampleInterval2" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active" data-bs-interval="10000">
+                            <img src="./images/image1.png" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="carousel-item" data-bs-interval="1000">
+                            <img src="./images/image1.png" class="d-block w-100" alt="...">
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval2"
+                        data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval2"
+                        data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+
+            <div class="col-md-6  vh-25 d-flex flex-column text-center align align-items-center h-100">
+                <h1 class="h1 text-center">First Bootstrap Portfolio</h1>
+                <p class="p p-2 text-start">My first Bootstrap portfolio is a responsive and modern website designed to
+                    highlight
+                    my skills, projects, and
+                    aspirations as a web developer. It uses Bootstrap's powerful grid system and components to
+                    create a visually engaging
+                    and user-friendly experience, setting the stage for my professional growth in web development.
+                </p>
+
+            </div>
+        </div>
+    </div>
+
+
+    <!-- expertices and education section -->
+    <div class="container block" id="skills">
+        <h1 class="skill-title ">My Skill</h1>
+        <div class="row">
+            <div class="skil-left col-md-12 col-lg-6 text-capitalize border ps-4
+            d-flex flex-column align-items-start justify-content-center h-100 ">
+                <div class="expertices w-50% mb-5 ">
+                    <h1 class="h1 mb-4 ">
+                        Expertise:
+                    </h1>
+                    <span class="badge bg-info p-2 fs-6">HTML</span>
+                    <span class="badge bg-secondary p-2 fs-6">css</span>
+                    <span class="badge bg-primary p-2 fs-6">Java</span>
+                    <span class="badge bg-secondary p-2 fs-6">C++</span>
+                    <span class="badge bg-black p-2 fs-6">python</span>
+                    <span class="badge bg-success p-2 fs-6">Javascript</span>
+                </div>
+
+                <div class="comfortable: w-50% mb-5">
+                    <h1 class="h1 mb-4 ">
+                        Comfortable:
+                    </h1>
+                    <span class="badge bg-black p-2 fs-6">C++</span>
+                    <span class="badge bg-success p-2 fs-6">Python</span>
+                    <span class="badge bg-danger p-2 fs-6">Sql</span>
+                    <span class="badge bg-secondary p-2 fs-6">Java</span>
+                </div>
+
+                <div class="Familiar w-50% mb-5">
+                    <h1 class="h1 mb-4 ">
+                        Familiar:
+                    </h1>
+                    <span class="badge bg-success p-2 fs-6">Python</span>
+                    <span class="badge bg-primary p-2 fs-6">c++</span>
+                    <span class="badge bg-danger p-2 fs-6">Javascript</span>
+
+                </div>
+                <div class="tools w-50% mb-5">
+                    <h1 class="h1 mb-4 ">
+                        Tools:
+                    </h1>
+                    <span class="badge bg-secondary p-2 fs-6">Vs code</span>
+                    <span class="badge bg-primary p-2 fs-6">Git</span>
+                    <span class="badge bg-success p-2 fs-6">Github</span>
+                    <span class="badge bg-black p-2 fs-6">Android Studio</span>
+                </div>
+            </div>
+            <div class="col-md-12 col-lg-6 text-center border pt-2 pb-3">
+                <div class="container-education d-flex flex-column
+                 align-items-center justify-content-center h-100">
+                    <h1 class="h1 ts-1 text-primary">My Education</h1>
+                    <hr>
+                    <h4 class="h4 fs-4 fw-normal">B.sc in Softwer Engineering <br>
+                        Institute of Science And Technology(ISTT)
+                    </h4>
+                    <div class="p fs-5">2018-2024</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- Contact Section -->
+
+    <section id="contact-section" class="container block text-center py-5 mt-lg-5 mb-lg-5">
+
+        <h2 class="contact-title text-uppercase">Contact With Me</h2>
+        <form class="needs-validation" novalidate>
+            <div class="row">
+                <div class="col-md-6"> <input type="text" class="form-control mb-3" placeholder="Your Name" required>
+
+                </div>
+                <div class="col-md-6"> <input type="email" class="form-control mb-3" placeholder="Your Email" required>
+
+                </div>
+            </div> <textarea class="form-control mb-3" rows="5" placeholder="Your Message" required></textarea>
+            <div class="invalid-feedback"> Please provide a message. </div> <button type="submit"
+                class="btn btn-primary p-auto w-100">Send Message</button>
+        </form>
+
+    </section>
+
+    <hr>
+    <!-- Footer -->
+    <footer class="text-center p-sm-5 p-lg-5 p-md-5 ">
+        <figure class="text-center">
+            <blockquote class="blockquote">
+                <p class="text-capitalize">Copyright &copy; 2024 || omar sadek <br>
+                </p>
+            </blockquote>
+            <figcaption class="blockquote-footer">
+                mirpur 13, Dhaka-1216 ,Bangladesh
+            </figcaption>
+        </figure>
+
+
+        <!-- Social Icons Section -->
+        <div class="d-flex justify-content-center gap-3 gap-lg-4 ">
+            <!-- Facebook -->
+            <a href="https://www.facebook.com/alomarsadek/" target="_blank"
+                class="text-decoration-none text-primary fs-3">
+                <i class="fab fa-facebook"></i>
+            </a>
+            <!-- GitHub -->
+            <a href="https://github.com/ERROR-41" target="_blank" class="text-decoration-none text-secondary fs-3">
+                <i class="fab fa-github"></i>
+            </a>
+            <!-- YouTube -->
+            <a href="https://www.youtube.com/@mdalomarsadek" target="_blank"
+                class="text-decoration-none text-danger fs-3">
+                <i class="fab fa-youtube"></i>
+            </a>
+        </div>
+
+    </footer>
+
+
+    <!-- Bootstrap Bundle with Popper -->
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
